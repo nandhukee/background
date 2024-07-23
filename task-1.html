@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js' defer></script> <!-- Use defer to ensure script runs after HTML parsing -->
+</head>
+<body>
+    <div>
+        <div style="background-color: red; text-align: center;" id="bg">
+            <h1>Background Color: Blue</h1>
+            <button onclick="changeBackgroundColor()">Click me</button>
+        </div>
+    </div>
+    <script>
+        function changeBackgroundColor() {
+    const bgc = document.getElementById("bg");
+    bgc.style.backgroundColor = "blue";
+}
+
+    </script>
+</body>
+</html>
